@@ -10,4 +10,4 @@ set_output_delay -clock XTAL 0 [get_ports LED*]
 set_max_skew -to [get_ports LED*] 3ns
 
 # as we internally synchronize the reset signal - it's safe to instruct the timing analysis to ignore the path
-set_false_path   -from  reset_n
+#set_false_path   -from  reset_n
